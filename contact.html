@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>rhino</title>
+      <title>Contact Us | Defined Engineering Solutions Ltd</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -61,19 +61,19 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6 padding_right0">
-                  <form id="request" class="main_form">
+                  <form id="request" class="main_form" method="post" action="email.php">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                           <input class="contactus" placeholder="Name" type="text" name="Name" required> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone" type="type" name="Phone">                          
+                           <input class="contactus" placeholder="Phone" type="phone" name="Phone" required>                          
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                           <input class="contactus" placeholder="Email" type="email" name="Email" required> 
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                           <textarea class="textarea" placeholder="Message" type="type" Message="Name" name="message" required>Message</textarea>
                         </div>
                         <div class="col-md-12">
                            <button class="send_btn">Send</button>
@@ -84,7 +84,7 @@
                <div class="col-md-6 padding_left0">
                   <div class="map_main">
                      <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="463" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.8341603350566!2d36.87193863966073!3d-1.2343474461914161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15de6327500f%3A0xe377ced0dd78f27!2sGarden%20Estate%20Road%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1674311795135!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                      </div>
                   </div>
                </div>
@@ -95,7 +95,7 @@
       <!--  footer -->
       <footer>
          <div class="footer" id="footer_target">
-            
+
          </div>
       </footer>
       <!-- end footer -->
@@ -105,6 +105,8 @@
       <script>
          const page_menu = document.getElementById('header_target').innerHTML = header1
          const page_footer = document.getElementById('footer_target').innerHTML = footer_ts
+
+         document.getElementById('nav-item_6').classList.add("active")
       </script>
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

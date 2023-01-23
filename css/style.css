@@ -1350,3 +1350,20 @@ ul.insta li {
 .core_values .col-md-4 {
      justify-content: center;
 }
+
+#manuscript {
+     background: url(../images/manuscript1.jpg);
+}
+
+.hsse ul li {
+     list-style-type:disc;
+     line-height: normal;
+}
+
+.hsse sign_off {
+     font-size: large;
+     font-weight: 600 !important;
+     font-family: "Lucida Console", "Courier New", monospace !important;
+}
+
+

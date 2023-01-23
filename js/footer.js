@@ -2,10 +2,14 @@ footer_ts = `
 <div>
             <div class="container">
                <div class="row">
-                  <div class=" col-lg-3 col-md-6">
+                  <div class=" col-lg-4 col-md-6">
                      <a class="logo_bottom"><img src="images/logo_2.png" alt="DESL" style="height:70%; max-width: 60%;"></a>
                      <p class="many">
-                        
+                     Naima Office Complex, Garden estate rd <br>
+                     P.O Box 596-00605, Nairobi<br>
+                     Call: +254 784 863 827 / +254722 863 827 <br>
+                     Website: definedeng.com <br>
+                     Email: info@definedeng.com / <a mailto:'sales@definedeng.com'>sales@definedeng.com</a> <br>
                      </p>
                   </div>
                   <div class="col-lg-2 offset-lg-1 col-md-6">
@@ -19,7 +23,7 @@ footer_ts = `
                      </ul>
                   </div>
                   
-                  <div class=" col-lg-6 col-md-6 ">
+                  <div class=" col-lg-5 col-md-6 ">
                      <h3>SIGN UP TO OUR NEWSLETTER </h3>
                      <form class="bottom_form">
                         <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
