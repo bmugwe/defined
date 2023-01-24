@@ -89,7 +89,7 @@ $(document).ready(function () {
           email.val("");
           subject.val("");
           message.val("");
-          info.html("Message sent!").css("color", "green").slideDown();
+          info.html("Message sent, we will get in touch!").css("color", "green").slideDown();
         } else {
           info
             .html("Could not send mail! Sorry!")
