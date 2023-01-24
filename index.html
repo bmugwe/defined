@@ -349,25 +349,53 @@
             </div>
             <div class="row">
                <div class="col-md-6 padding_right0">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone" type="type" name="Phone">                          
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
-                        </div>
-                        <div class="col-md-12">
-                           <button class="send_btn">Send</button>
-                        </div>
-                     </div>
-                  </form>
+                  <form action="" id="form">
+                     <label for="email">Name:</label>
+                     <input
+                       class="contactus"
+                       type="text"
+                       name="name"
+                       id="name"
+                       placeholder="John Doe"
+                     /><br />
+                     <label for="email">Phone Number:</label>
+                     <input
+                       class="contactus"
+                       type="tel"
+                       name="phone"
+                       id="phone"
+                       placeholder="0712 345 678"
+                     /><br />
+       
+                     <label for="email">Email:</label>
+                     <input
+                       class="contactus"
+                       type="text"
+                       name="email"
+                       id="email"
+                       placeholder="email@example.com"
+                     /><br />
+                     <label for="subject">Subject:</label>
+                     <input
+                       class="contactus"
+                       type="text"
+                       name="subject"
+                       id="subject"
+                       placeholder="subject"
+                     /><br />
+                     <label for="message">Message:</label>
+                     <textarea
+                       class="textarea"
+                       name="message"
+                       id="message"
+                       placeholder="message"
+                     ></textarea
+                     ><br />
+                     <button class="btn btn-secondary" name="submit" id="submit">
+                       Send
+                     </button>
+                     <label id="info"></label>
+                   </form>
                </div>
                <div class="col-md-6 padding_left0">
                   <div class="map_main">
