@@ -53,7 +53,7 @@ $(function () {
 });
 
 
-// Send email Asynch
+// Send email Async
 
 $(document).ready(function () {
   var form = $("#form"),
@@ -120,4 +120,12 @@ $(document).ready(function () {
 
     return valid;
   }
+});
+
+
+
+// Year contrib
+$(document).ready(function () {
+  var current_year = new Date().getFullYear()
+  $('#year_contrib').text(current_year)
 });
