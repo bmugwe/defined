@@ -1,28 +1,20 @@
-<?php 
+<?php
 
-if(isset($_POST['submit'])) {
-    $mailto = "info@definedeng.com";
-    // Email data
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $visitor_phone = $_POST['phone_number'];
-    $message = $_POST['message'];
-
-    $subject = "Message from Website Enquiry";
-    // Message body
-    $message2 = "Dear David, \n"
-    . "I am " . $name . "\n" . "My phone Number is" . "\n". $visitor_phone . "\n"
-    . "\n". $message . "\n" . "Regards";
-
-    $headers = "From: " . $visitor_email;
-
-    $result1 = mail($mailto, $subject, $message, $headers);
-
-    if ($result1 && $result2) {
-        $success = "Your Message was sent Successfully!";
-      } else {
-        $failed = "Sorry! Message was not sent, Try again Later.";
-      }
-     
-    }
-?>
+if ($_POST) {
+  $to = "info@definedeng.com"; // your mail here
+  $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+  $phone = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
+  $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+  $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
+  $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+  $body = "
+  This message is from the website form:\n  By:$name\n Phone No is: $phone \nE-mail: $email \n Message: $message";
+  
+  if (@mail($to, $subject, $body)) {
+    $output = json_encode(array('success' => true));
+    die($output);
+  } else {
+    $output = json_encode(array('success' => false));
+    die($output);
+  }
+}

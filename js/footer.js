@@ -36,7 +36,7 @@ footer_ts = `
                <div class="container">
                   <div class="row">
                      <div class="col-md-8 offset-md-2">
-                        <p>© 2023 All Rights Reserved. Design by Equitexy Business Solutions</a></p>
+                        <p>© <span id="year_contrib"></span> All Rights Reserved. Design by Equitexy Business Solutions</a></p>
                      </div>
                   </div>
                </div>
